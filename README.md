@@ -1,4 +1,7 @@
 
+#### First build the application
+Mac/Linux: ./mvnw clean package (or) mvnw clean package
+
 #### Start all apps in docker
 docker-compose up --build --force-recreate -d 
 
