@@ -40,21 +40,21 @@ services:
   catalog-service:
     build: ./catalog-service
     ports:
-      - "8181:8080"
+      - "8181:8181"
     depends_on:
       - mongodb
 
   order-service:
     build: ./order-service
     ports:
-      - "8383:8080"
+      - "8383:8383"
     depends_on:
       - mysql
 
   customer-service:
     build: ./customer-service
     ports:
-      - "8282:8080"
+      - "8282:8282"
     depends_on:
       - postgres
       - order-service
